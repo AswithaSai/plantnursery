@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>Contact Us</title>
+    <style>
+        body{
+            background-color:transparent;
+        }
+        .form{
+            margin-top:10%;
+            margin-left:15%;
+            margin-right:15%;
+            background-color: lightgray;
+            border-radius:30px;
+            height: fit-content;
+
+        }
+        .contactUs{
+            text-align: center;
+        }
+        .us{
+            color:deeppink;
+        }
+        .form1{
+            padding-left: 10%;
+        }
+        .input{
+            width: 300px;
+        }
+        .block{
+            background-color: aquamarine;
+            width: 50%;
+            padding:10px;
+            margin-left: 10%;
+            border-radius: 10px;
+        }
+        .div1 pre{
+            background-color:floralwhite;
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            text-align: center;
+        }
+        .ur{
+            color:green
+        }
+        .app{
+            color:red;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar sticky-top navbar-light bg-dark link-text-white text-white" >
+        <h1><big>Green<span class="ur"> Bliss</span> Nursery</big></h1>
+        <a class="navbar-brand" href="index.php"><span style="color:ghostwhite">Home</span></a>
+        <a class="navbar-brand" href="aboutUs.html"><span style="color:ghostwhite">About Us</span> </a>
+        <a class="navbar-brand" href="login.html"><span style="color:ghostwhite">Login</span></a>
+        <a class="navbar-brand" href="signUp.html"><span style="color:ghostwhite">Sign Up</span></a>
+    </nav>
+    <br>
+    <div class="div1">
+            <pre>
+               <h1 style="color:yellowgreen">HI WELCOME TO NURSERY APP</h1> 
+               <div style="font-size:30px">
+If you have any Quieries regading how to use the
+Website and if you have quiries related how to order products and how to sign up / login
+feel free to ask. 
+If you fill the form and submit it then it will be automatically submitted to the 
+admins mail and you will received the mail from them
+We will give Reply to you as Soon as Possible.
+               </div>
+            </pre>
+    </div>
+
+    <div class="form">
+        <br>
+        <h1 class="contactUs">CONTACT <span class="us">US</span></h1>
+        <br>
+        <form class="form1" action="https://formsubmit.co/NurseryDbmsProject@gmail.com" method="POST">
+            <table>
+                <tr></tr>
+                <td>
+                    <label>Name:</label><br>
+                    <input type="text" name="name" class="input" placeholder="Name...">
+                </td>
+                <td width="100px"></td>
+                <td><br>
+                    <label>email:</label><br>
+                    <input type="text" name="email" class="input" placeholder="example@gmail.com"><br><br>
+                </td>
+            </table>
+            
+            <table>
+                <tr></tr>
+                <td>
+                    <label>Subject:</label><br>
+                    <input type="text" name="_subject" class="input" placeholder="Subject..."><br><br>
+                </td>
+                <td width="100px"></td>
+                <td><br>
+                    <label>Phone No : </label><br>
+                    <input type="text" name="Phoneno" class="input" placeholder="Enter Your Phone Number"><br><br>
+                </td>
+            </table>
+
+            <label>Message:</label><br>
+            <textarea name="message" rows="5" class="input" placeholder="Type Your message Here........"></textarea>
+            <br><br>
+            <button class="block">
+                Send Message
+            </button>
+            <br><br>
+        </form>
+    </div>
+    <br><br><br>
+    
+</body>
+</html>

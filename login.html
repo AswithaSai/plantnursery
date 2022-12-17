@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>Login Page</title>
+    <style>
+        body{
+            background-color:transparent;
+            margin: 0%;
+            padding: 0%;
+        }
+        .Login{
+            margin-top: 5%;
+            margin-left: 5%;
+            margin-right: 5%;
+            margin-bottom: 5%;
+            background-color:lightgrey;
+            border-radius: 20px;
+            height:50%;
+        }
+        .link{
+            text-decoration: none;
+        }
+        .TermsAndConditions{
+            text-decoration: none;
+        }
+        .block {
+            display: block;
+            border: none;
+            background-color: #04AA6D;
+            color: white;
+            padding: 14px 28px;
+            font-size: 16px;
+            cursor: pointer;
+            text-align: center;
+        }
+        .ur{
+            color:green
+        }
+        .app{
+            color:red;
+        }
+    </style>
+</head>
+<body >
+    <nav class="navbar sticky-top navbar-light bg-dark link-text-white text-white" >
+        <h1><big>Green<span class="ur"> Bliss</span> Nursery</big></h1>
+        <a class="navbar-brand" href="index.php"><span style="color:ghostwhite">Home</span></a>
+        <a class="navbar-brand" href="aboutUs.html"><span style="color:ghostwhite">About Us</span> </a>
+        <a class="navbar-brand" href="signUp.html"><span style="color:ghostwhite">Sign Up</span></a>
+        <a class="navbar-brand" href="contactUs.html"><span style="color:ghostwhite">Contact Us</span></a>
+    </nav>
+        <br>
+    <div class="Login">
+        <table>
+            <td >
+                <p>
+                    <img src="images/women.svg" width="70%" height="70%">
+                </p>
+            </td>
+            <td>
+                <h2>
+                    Sign into your account
+                </h2>
+                <br>
+                <form action="LoginCheck.php" method="post">
+                        <label for="Username" style="font-size:20px" >Username : </label>
+                        <input type="text" name="User_Id" width="200%">
+                        <br>
+                        <br>
+                        <label for="pwd" style="font-size:20px" >Password : </label>
+                        <input type="password" name="pass" width="200%">
+                        <br>
+                        <br>
+                        <table >
+                            <td><button type="login" value="login" class="block">Login Now</button></td>
+                            <td width="50"></td>
+                            <td><button type="reset" value="reset" class="block">Reset</button></td>
+                        </table>
+                    </form>
+                    <br>
+                    <strong>Don't Have a Account?</strong>
+                    <a class="link" href="signUp.html">Register Here.</a>
+                    <br><br><br><br><br>
+                    <pre>
+<span>Terms and Contions</span>           <span>Privacy Policy</span>
+                    </pre>
+            </td>
+        </table>
+    </div> 
+    
+</body>
+</html>
